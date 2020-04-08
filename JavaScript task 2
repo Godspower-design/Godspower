@@ -1,0 +1,40 @@
+
+let Data = [ { principal: 2500, time: 1.8}, { principal: 1000, time: 5}, { principal: 3000, time: 1}, { principal: 2000, time: 3} ];
+    
+  function interestCalculator(Data) {
+      principal = 2500;
+      time = "";
+      rate = "";         
+        if( principal >= 2500 && time > 1 && time < 3  ){
+
+                    return rate = 3;
+        } 
+
+        if(principal >= 2500 && time >= 3 ){
+
+              return rate = 4;
+        }
+
+        if(principal < 2500 || time <= 1){
+
+         return rate = 2;
+   }  else {
+                      return rate = 1;
+         }
+   
+  };
+  console.log(interestCalculator(Data));
+   
+    function interestData( principal, rate, time){
+
+       result = principal * rate * time / 100;
+       return result;
+    }
+
+    interestData(2500, 2, 3);
+    interestData(2500, 4, 3);
+    interestData(2450, 2,1);
+    console.log(interestData(2500, 2, 3));
+    console.log(interestData(2500, 4, 3));
+    console.log(interestData(2450, 2,1));
+    
